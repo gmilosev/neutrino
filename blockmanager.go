@@ -2667,7 +2667,7 @@ func (b *blockManager) calcNextRequiredDifficulty(newBlockTime time.Time,
 	}
 
 	prev := lastNode
-	for i := 0; i < blockchain.DifficultyAdjustmentWindow; i++ {
+	for i := 0; i < 144; i++ {
 		prev = prev.Prev()
 	}
 
